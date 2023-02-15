@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async demo</title>
+    <script>
+        let productname = "mobile";
+        let quantity = 4;
+        let status = "delivered";
+
+        let productstatus = "status of the product is ";
+        productstatus += (status == 'delivered') ? 'green' : 'red';
+
+        let description = `I have
+ordered ${quantity} ${productname} from flipkart
+the status of the order is ${productstatus}
+`;
+
+        function estimatedDelivery() {
+            return "07-02-2023";
+        }
+
+        let description2 = "I have ordered" + quantity + " " + productname + " from flipkart and the estimated delivery of the product is " + estimatedDelivery();
+
+        console.log(description)
+        console.log(description2);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
