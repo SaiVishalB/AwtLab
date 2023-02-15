@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        //destructuring using arrays
+        const firstArr = ["one","two","three","four"]
+        const [first,second] = firstArr;//same name should be assigned
+        console.log(first,second)
+        //swapping using destructuring
+        const secondArr = ["world","hello"]
+        let [one,two] = secondArr
+        const temp = one
+        one = two
+        two = temp
+        document.write(one,two)
+        // another method for swapping
+        let thirdArr = ["vishal","sai"];//semicolon is mandatory for initialization
+        [thirdArr[0],thirdArr[1]]=[thirdArr[1],thirdArr[0]]
+        document.write("<br>"+thirdArr)
+        //destructuring using object
+        const firstObj = {
+            fName : "Information",lName : "Technology",estb : 2001
+            //, should be used while creating members of an object
+        };//semicolon
+        const {fName:fN,lName:lN} = firstObj;//semicolon
+        document.write("<br>"+fN,lN)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

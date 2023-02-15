@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <script>
+        class human{
+            constructor(){
+                this.age = 20;
+            }
+            printH(){
+                console.log("Super class value: "+this.age+"\n")
+            }
+        }
+        class person extends human{
+            constructor(){
+                super();
+                this.name = "vishal";
+            }
+            printName(){
+                document.write("name : sai "+this.name);
+            }
+            printAge(){
+                document.write("<br>age : "+this.age+"<br>")
+            }
+        }
+        const persons1 = new human();
+        const persons = new person();
+        persons.printName()
+        persons.printAge()
+        persons1.printH()
+    </script>
+</head>
+<body>
+</body>
+</html>
